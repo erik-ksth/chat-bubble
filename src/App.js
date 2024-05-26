@@ -3,7 +3,6 @@ import "./App.css";
 import typingBubble from "./typing-bubble.gif";
 import messageSound from "./message-sent-sound.wav";
 import messageTail from "./message-tail.png";
-import { FaArrowCircleUp } from "react-icons/fa";
 
 function App() {
   const [isTyping, setIsTyping] = useState(false);
@@ -73,8 +72,14 @@ function App() {
           className="rounded-full px-3 bg-transparent border border-white text-white text-center"
         ></input>
         <div className="cursor-pointer relative bg-transparent border border-white rounded-full">
-          <div className="absolute inset-0 text-white align-middle text-center">Upload Profile Picture</div>
-          <input type="file" onChange={handleInputProfilePic} className="opacity-0 w-[200px]"></input>
+          <div className="absolute inset-0 text-white align-middle text-center">
+            Upload Profile Picture
+          </div>
+          <input
+            type="file"
+            onChange={handleInputProfilePic}
+            className="opacity-0 w-[200px]"
+          ></input>
         </div>
       </div>
 
